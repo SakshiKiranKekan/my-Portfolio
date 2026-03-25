@@ -423,9 +423,9 @@
         </div>
     </section>
 
-    <!-- Education + Skills in 2 col grid (original data preserved) -->
+    <!-- Education + Skills in 2 col grid (original data preserved, SSC added) -->
     <div class="grid-2cols">
-        <!-- Education card -->
+        <!-- Education card with SSC section added after HSC -->
         <section id="education" class="section fade-up delay-1" style="padding-top: 0;">
             <div class="card" style="height: 100%;">
                 <h2 class="section-title" style="margin-top: 0;">Education</h2>
@@ -434,9 +434,13 @@
                     <p>Sanjivani College of Engineering (2023 – 2027)</p>
                     <p><strong>CGPA:</strong> 8.74</p>
                 </div>
-                <div>
+                <div style="margin-bottom: 1.2rem;">
                     <p style="font-weight: 700; font-size: 1.1rem;">📖 HSC (2021 – 2023)</p>
                     <p>Percentage: 82.33%</p>
+                </div>
+                <div>
+                    <p style="font-weight: 700; font-size: 1.1rem;">🏆 SSC (10th)</p>
+                    <p>Percentage: 98.40%</p>
                 </div>
             </div>
         </section>
@@ -444,7 +448,7 @@
         <!-- Skills card (original skills in modern layout) -->
         <section id="skills" class="section fade-up delay-2" style="padding-top: 0;">
             <div class="card" style="height: 100%;">
-                <h2 class="section-title" style="margin-top: 0;">Technical Arsenal</h2>
+                <h2 class="section-title" style="margin-top: 0;">Technical Skills</h2>
                 <div class="skills-badge">
                     <span class="skill-tag"><i class="fas fa-code"></i> SAP ABAP (Reports, Data Dictionary, Debugging)</span>
                     <span class="skill-tag"><i class="fab fa-python"></i> Python, Java, C++</span>
@@ -592,8 +596,6 @@
     setActiveNav();
 
     // simple reveal on scroll (fade-up already set but dynamic re-trigger not needed, just ensures visible)
-    // all fade-up elements already visible by default due to no hidden override, but we add slight staggered
-    // for fun: fix any visibility
     const fadeElements = document.querySelectorAll('.fade-up');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
