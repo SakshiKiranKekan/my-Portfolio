@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Kekan Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #16a085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sakshi Kekan</h1>
+    <p>Aspiring SAP ABAP Developer | Computer Engineering Student</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Engineering student with strong interest in SAP backend development,
+            AI/ML, and enterprise applications. I have good problem-solving skills and knowledge
+            of programming languages like Python, Java, and C++.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="card">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Engineering</strong> (2023–2027)</p>
+        <p>Sanjivani College of Engineering</p>
+        <p>CGPA: 8.74</p>
+
+        <br>
+
+        <p><strong>HSC</strong> (2021–2023)</p>
+        <p>Percentage: 82.33%</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>SAP ABAP (Reports, Data Dictionary, Debugging)</li>
+            <li>Languages: Python, Java, C++</li>
+            <li>Data Visualization: Power BI, Tableau</li>
+            <li>Concepts: OOP, Data Structures</li>
+            <li>Soft Skills: Communication, Teamwork, Problem-solving</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Automated Lip Reading</strong> - Deep learning project using CNN & RNN</li>
+            <li><strong>Health & Nutrition Data Analysis</strong> - Python & Pandas</li>
+            <li><strong>Crop Disease Detection</strong> - AI-based system with fertilizer suggestion</li>
+            <li><strong>SAP Student Database</strong> - Built using Data Dictionary & reports</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>📞 Phone: +91 7559111829</p>
+        <p>📧 Email: kekansakshi@gmail.com</p>
+        <p>📍 Location: Kopargaon, India</p>
+
+        <br>
+
+        <button class="btn" onclick="showMessage()">Say Hello 👋</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sakshi Kekan | Portfolio</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Thank you for visiting my portfolio 😊");
+    }
+</script>
+
+</body>
+</html>
